@@ -1,0 +1,514 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+	"LANGUAGE 4, 2\r\n"
+	"#pragma code_page(936)\r\n"
+	"#include ""res\\AutoWatcher.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+	"#include ""afxres.rc""  	// Standard components\r\n"
+	"#include ""res\\BCGSoft_ribbon\\AutoWatcher.ribbon.rc2""  // BCG Designer resources\r\n"
+	"#endif\r\n"
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+IDR_MAINFRAME           ICON         "res\\AutoWatcher.ico"
+#endif
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_RIBBON_FILELARGE			PNG          "res\\ribbonfilelarge.png"
+IDB_WORKSPACE					PNG			"res\\Workspace.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU   
+BEGIN
+	POPUP "文件(&F)"
+	BEGIN
+		MENUITEM "新建(&N)\tCtrl+N",                ID_FILE_NEW
+		MENUITEM SEPARATOR
+		MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+		MENUITEM "退出(&X)",                       ID_APP_EXIT
+	END
+	POPUP "视图(&V)"
+	BEGIN
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+		MENUITEM "状态栏(&S)",                 ID_VIEW_STATUS_BAR
+		POPUP "程序外观(&A)"
+		BEGIN
+			MENUITEM "Window&s 7",				ID_VIEW_APPLOOK_SCENIC
+            POPUP "Visual Studi&o 2013"
+            BEGIN
+                MENUITEM "亮色(&L)",            ID_VIEW_APPLOOK_VS2013_LIGHT
+                MENUITEM "暗色(&L)",             ID_VIEW_APPLOOK_VS2013_DARK
+                MENUITEM "蓝色(&B)",             ID_VIEW_APPLOOK_VS2013_BLUE
+            END
+			POPUP "Office 201&6"
+            BEGIN
+                MENUITEM "彩色(&C)",         ID_VIEW_APPLOOK_2016_1
+                MENUITEM "黑灰(&D)",		ID_VIEW_APPLOOK_2016_2
+                MENUITEM "白色(&W)",			ID_VIEW_APPLOOK_2016_3
+            END
+		END
+	END
+	POPUP "帮助(&H)"
+	BEGIN
+		MENUITEM "关于(&A)AutoWatcher...",          ID_APP_ABOUT
+	END
+END
+IDR_AutoWatcherTYPE MENU   
+BEGIN
+	POPUP "文件(&F)"
+	BEGIN
+		MENUITEM "新建(&N)\tCtrl+N",                ID_FILE_NEW
+		MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+		MENUITEM SEPARATOR
+		MENUITEM "退出(&X)",                       ID_APP_EXIT
+	END
+	POPUP "编辑(&E)"
+	BEGIN
+		MENUITEM "撤销(&U)\tCtrl+Z",               ID_EDIT_UNDO
+		MENUITEM SEPARATOR
+		MENUITEM "剪切(&T)\tCtrl+X",                ID_EDIT_CUT
+		MENUITEM "复制(&C)\tCtrl+C",               ID_EDIT_COPY
+		MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+	END
+	POPUP "视图(&V)"
+	BEGIN
+        POPUP "工具栏(&T)"
+        BEGIN
+            MENUITEM "",                            ID_VIEW_TOOLBARS
+        END
+		MENUITEM "状态栏(&S)",                 ID_VIEW_STATUS_BAR
+		POPUP "程序外观(&A)"
+		BEGIN
+			MENUITEM "Window&s 7",				ID_VIEW_APPLOOK_SCENIC
+            POPUP "Visual Studi&o 2013"
+            BEGIN
+                MENUITEM "亮色(&L)",            ID_VIEW_APPLOOK_VS2013_LIGHT
+                MENUITEM "暗色(&L)",             ID_VIEW_APPLOOK_VS2013_DARK
+                MENUITEM "蓝色(&B)",             ID_VIEW_APPLOOK_VS2013_BLUE
+            END
+			POPUP "Office 201&6"
+            BEGIN
+                MENUITEM "彩色(&C)",         ID_VIEW_APPLOOK_2016_1
+                MENUITEM "黑灰(&D)",		ID_VIEW_APPLOOK_2016_2
+                MENUITEM "白色(&W)",			ID_VIEW_APPLOOK_2016_3
+            END
+		END
+	END
+	POPUP "窗口(&W)"
+	BEGIN
+		MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+		MENUITEM "平铺(&T)",                       ID_WINDOW_TILE_HORZ
+		MENUITEM "排列(&A)",              ID_WINDOW_ARRANGE
+	END
+	POPUP "帮助(&H)"
+	BEGIN
+		MENUITEM "关于(&A)AutoWatcher...",          ID_APP_ABOUT
+	END
+END
+
+
+
+
+
+IDR_POPUP_TOOLBAR MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "标准工具栏",            ID_VIEW_TOOLBAR
+		MENUITEM "工作区(&W)",					ID_VIEW_WORKSPACE
+		MENUITEM "工作区2(&W)",				ID_VIEW_WORKSPACE2
+		MENUITEM "输出(&O)",						ID_VIEW_OUTPUT
+    END
+END
+
+IDR_POPUP_MDITABS MENU DISCARDABLE 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "保存(&S)",                       ID_FILE_SAVE
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "新建水平分页组(&H)",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "新建垂直分页组(&V)",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "移到下分页组(&X)",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "移到上分页组(&R)", ID_MDI_MOVE_TO_PREV_GROUP
+    END
+END
+
+IDR_POPUP_DROP_MDITABS MENU DISCARDABLE 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "新建水平分页组(&H)",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "新建垂直分页组(&V)",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "移到下分页组(&X)",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "移到上分页组(&R)", ID_MDI_MOVE_TO_PREV_GROUP
+        MENUITEM SEPARATOR
+        MENUITEM "取消(&C)",                     ID_MDI_CANCEL
+    END
+END
+
+IDR_PASTE_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "粘贴(&P)",              ID_EDIT_PASTE
+    MENUITEM "特殊粘贴(&S)...",           ID_EDIT_PASTE_SPECIAL
+END
+
+IDR_THEME_MENU MENU DISCARDABLE 
+BEGIN
+	MENUITEM "Windows &7",					ID_VIEW_APPLOOK_SCENIC
+	MENUITEM SEPARATOR
+    MENUITEM "Visual Studio 2013 亮色主题(&W)",	ID_VIEW_APPLOOK_VS2013_LIGHT
+    MENUITEM "Visual Studio 2013 暗色主题(&L)",	ID_VIEW_APPLOOK_VS2013_DARK
+    MENUITEM "Visual Studio 2013 蓝色主题(&D)",	ID_VIEW_APPLOOK_VS2013_BLUE
+	MENUITEM SEPARATOR
+    MENUITEM "Office 2016 彩色主题(&F)",	ID_VIEW_APPLOOK_2016_1
+    MENUITEM "Office 2016 黑灰主题(&G)",	ID_VIEW_APPLOOK_2016_2
+    MENUITEM "Office 2016 白色主题(&H)",	ID_VIEW_APPLOOK_2016_3
+END
+ // VISUAL_MANAGER
+ // UI_TYPE_RIBBON
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS   
+BEGIN
+	"N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+	"O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+	"S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
+	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
+	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
+	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
+	VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
+	VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
+	VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
+	VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
+	VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+	VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+END
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX   0, 0, 235, 55
+CAPTION "关于 AutoWatcher"
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "宋体"
+BEGIN
+	ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+	LTEXT           "AutoWatcher 版本 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+	LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+	DEFPUSHBUTTON   "确认",IDOK,178,7,50,16,WS_GROUP
+    PUSHBUTTON      "http://www.<MyCompany>.com",IDC_COMPANY_URL,40,36,119,14
+END
+
+
+IDD_FORM_INFO DIALOG DISCARDABLE  0, 0, 333, 259
+STYLE WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_SEPARATOR_4,"Static",SS_ETCHEDVERT,155,7,1,245
+    CONTROL         "",IDC_PATH_LABEL,"Static",SS_GRAYRECT | NOT WS_VISIBLE,
+                    7,7,139,28
+    CONTROL         "",IDC_SEPARATOR_1,"Static",SS_ETCHEDHORZ,7,36,139,1
+    PUSHBUTTON      "Button 1",IDC_BUTTON1,7,47,56,49,BS_MULTILINE
+    LTEXT           "在此填写详细说明",IDC_TEXT1,75,47,
+                    71,36
+    CONTROL         "",IDC_SEPARATOR_2,"Static",SS_ETCHEDHORZ,7,110,139,1
+    PUSHBUTTON      "Button 2",IDC_BUTTON2,7,124,56,49,BS_MULTILINE
+    LTEXT           "在此填写详细说明",IDC_TEXT2,75,124,
+                    71,36
+    CONTROL         "",IDC_SEPARATOR_3,"Static",SS_ETCHEDHORZ,7,186,139,1
+    PUSHBUTTON      "Button 3",IDC_BUTTON3,7,202,56,49,BS_MULTILINE
+    LTEXT           "在此填写详细说明",IDC_TEXT3,75,202,
+                    71,36
+    CONTROL         "",IDC_INFO_LABEL,"Static",SS_GRAYRECT | NOT WS_VISIBLE,
+                    166,7,160,28
+    CONTROL         "",IDC_SEPARATOR_5,"Static",SS_ETCHEDHORZ,166,36,160,1
+    PUSHBUTTON      "Thumbnail",IDC_PREVIEW,166,47,160,85
+    LTEXT           "在此填写程序和文档信息",
+                    IDC_TEXT4,166,142,160,110
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "008040"
+		BEGIN 
+            VALUE "CompanyName", "TODO: <公司名称>"
+            VALUE "FileDescription", "TODO: <文档说明>"
+			VALUE "FileVersion",     "1.0.0.1"
+			VALUE "InternalName",    "AutoWatcher.exe"
+            VALUE "LegalCopyright", "TODO: (c) <公司名称>.  版权所有."
+			VALUE "OriginalFilename","AutoWatcher.exe"
+            VALUE "ProductName", "TODO: <产品名称>"
+			VALUE "ProductVersion",  "1.0.0.1"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x0804, 936
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE  
+BEGIN
+	IDP_OLE_INIT_FAILED   	"OLE 初始化失败.  确认 OLE 库版本正确."
+END
+STRINGTABLE   
+BEGIN
+// Non-mac-targeting apps remove the two extra substrings
+	IDR_MAINFRAME           "AutoWatcher"
+	IDR_AutoWatcherTYPE         "\nAutoWatcher\nAutoWatcher"
+END
+STRINGTABLE   
+BEGIN
+	AFX_IDS_APP_TITLE       "AutoWatcher"
+	AFX_IDS_IDLEMESSAGE     "就绪"
+END
+STRINGTABLE  
+BEGIN
+	ID_INDICATOR_EXT        "扩展"
+	ID_INDICATOR_CAPS       "大写"
+	ID_INDICATOR_NUM        "数字"
+	ID_INDICATOR_SCRL       "滚动"
+	ID_INDICATOR_OVR        "覆写"
+	ID_INDICATOR_REC        "录音"
+END
+STRINGTABLE  
+BEGIN
+	ID_FILE_NEW             "创建新文档\n新建"
+	ID_FILE_CLOSE           "关闭文档\n关闭"
+	ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+	ID_APP_EXIT             "退出应用程序; 提示保存文档\n退出"
+	ID_NEXT_PANE            "切换到下一个窗格\n下窗格"
+	ID_PREV_PANE            "切换到上一个窗格\n上窗格"
+	ID_WINDOW_MANAGER	"管理当前打开的文档\n窗口列表"
+	ID_WINDOW_ARRANGE       "窗口底部排列图标\n排列图标"
+	ID_WINDOW_CASCADE       "以层叠的方式排列窗口\n层叠窗口"
+	ID_WINDOW_TILE_HORZ     "以不层叠标题的方式排列窗口\n水平平铺"
+	ID_WINDOW_TILE_VERT     "以不层叠标题的方式排列窗口\n垂直平铺"
+	ID_WINDOW_SPLIT         "用窗格分割窗口\n分割"
+	ID_EDIT_CLEAR           "删除选中项\n删除"
+	ID_EDIT_CLEAR_ALL       "删除所有\n全删"
+	ID_EDIT_COPY            "选中项复制到剪贴板\n复制"
+	ID_EDIT_CUT             "选中项剪切到剪贴板\n剪切"
+	ID_EDIT_FIND            "查找指定文本\n查找"
+	ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+	ID_EDIT_REPEAT          "重新执行最后命令\n重置"
+	ID_EDIT_REPLACE         "用不同的内容替换指定文本\n替换"
+	ID_EDIT_SELECT_ALL      "选择整个文档\n全选"
+	ID_EDIT_UNDO            "撤销最后操作\n撤销"
+	ID_EDIT_REDO            "重新执行上一个未执行的操作\n重做"
+	ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n控制工具栏"
+	ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n控制状态栏"
+END
+
+STRINGTABLE  
+BEGIN
+	AFX_IDS_SCSIZE          "更改窗口大小"
+	AFX_IDS_SCMOVE          "更改窗口位置"
+	AFX_IDS_SCMINIMIZE      "窗口缩小到图标大小"
+	AFX_IDS_SCMAXIMIZE      "窗口扩大到满屏大小"
+	AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+	AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+	AFX_IDS_SCCLOSE         "关闭活动窗口并保存文档"
+	AFX_IDS_SCRESTORE       "窗口恢复到原始大小"
+	AFX_IDS_SCTASKLIST      "激活任务列表"
+	AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+#endif
+
+STRINGTABLE 
+BEGIN
+	IDS_MAIN_TOOLBAR			"标准"
+END
+
+STRINGTABLE 
+BEGIN
+	IDS_WINDOWS_MANAGER			"窗口(&W)..."
+END
+
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_VIEW_APPLOOK_SCENIC	"激活 Windows 7 主题\nWindows 7"
+    ID_VIEW_APPLOOK_VS2013_LIGHT 
+                            "激活 Visual Studio 2013 亮色主题\nVS 2013 亮色"
+    ID_VIEW_APPLOOK_VS2013_DARK 
+                            "激活 Visual Studio 2013 暗色主题\nVS 2013 暗色"
+    ID_VIEW_APPLOOK_VS2013_BLUE 
+                            "激活 Visual Studio 2013 蓝色主题\nVS 2013 蓝色"
+	ID_VIEW_APPLOOK_2016_1	"激活 Office 2016 主题\nOffice 2016 彩色"
+	ID_VIEW_APPLOOK_2016_2	"激活 Office 2016 主题\nOffice 2016 黑灰色"
+	ID_VIEW_APPLOOK_2016_3	"激活 Office 2016 主题\nOffice 2016 白色"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_VIEW_WORKSPACE		"显示或隐藏工作区\n切换工作区"
+	ID_VIEW_WORKSPACE2		"显示或隐藏工作区\n切换工作区"
+	ID_VIEW_OUTPUT			"显示或隐藏输出窗口\n切换输出窗口"
+
+	ID_VIEW_PROPERTIES		"显示或隐藏属性窗口\n切换属性窗口"
+
+
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	ID_TOOLS_OPTIONS		"更改应用程序选项\n选项"
+	ID_STATUSBAR_PANE1		"状态栏 1"
+	ID_STATUSBAR_PANE2		"状态栏 2"
+END
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\\AutoWatcher.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"  	// Standard components
+#include "res\\BCGSoft_ribbon\\AutoWatcher.ribbon.rc2"  // BCG Designer resources
+#endif
+#endif    // not APSTUDIO_INVOKED

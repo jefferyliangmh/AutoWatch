@@ -1,0 +1,2 @@
+const int Default::IntegerDefault = 0;
+const double Default::RealDefault = 0.0f;
