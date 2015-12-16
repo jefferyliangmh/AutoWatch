@@ -5,11 +5,18 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoWatcher", "AutoWatcher\AutoWatcher.vcxproj", "{04819825-7468-4A27-B302-F99EF541A9B5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WatchCore", "WatchCore\WatchCore.vcxproj", "{4D212989-6C0D-4A52-A0EA-0DAAD8CB48C9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "WatchCore\WatchCore.vcxproj", "{4D212989-6C0D-4A52-A0EA-0DAAD8CB48C9}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{F73D6069-0222-41CA-A405-A873C6EEB499}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logger", "Logger\Logger.vcxproj", "{9612DC6A-666E-4E71-82EF-566008590B7E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsioNet", "AsioNet\AsioNet.vcxproj", "{E52D400F-9296-4ACE-BFA6-B86F48630340}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{9D0D2ECC-5CF4-4E85-8275-012C4A5CB1D0}"
+	ProjectSection(SolutionItems) = preProject
+		include\BoostDefine.h = include\BoostDefine.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +58,14 @@ Global
 		{9612DC6A-666E-4E71-82EF-566008590B7E}.Release|x64.Build.0 = Release|x64
 		{9612DC6A-666E-4E71-82EF-566008590B7E}.Release|x86.ActiveCfg = Release|Win32
 		{9612DC6A-666E-4E71-82EF-566008590B7E}.Release|x86.Build.0 = Release|Win32
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Debug|x64.ActiveCfg = Debug|x64
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Debug|x64.Build.0 = Debug|x64
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Debug|x86.ActiveCfg = Debug|Win32
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Debug|x86.Build.0 = Debug|Win32
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Release|x64.ActiveCfg = Release|x64
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Release|x64.Build.0 = Release|x64
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Release|x86.ActiveCfg = Release|Win32
+		{E52D400F-9296-4ACE-BFA6-B86F48630340}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

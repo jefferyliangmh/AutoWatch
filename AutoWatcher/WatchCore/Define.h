@@ -9,4 +9,4 @@
 	#define WATCHAPI
 #endif // _WIN32
 
-#include "../Logger/AppLogger.h"
+#include "../Logger/Log.h"

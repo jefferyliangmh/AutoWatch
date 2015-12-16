@@ -7,8 +7,8 @@
 #include "MainFrm.h"
 #include "BackStagePageInfo.h"
 
-#include "../WatchCore/IntValue.h"
-#include "../Logger/AppLogger.h"
+#include "../WatchCore/Value.h"
+#include "../Logger/Log.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "AutoWatcher.h"
 #include "PropertiesViewBar.h"
+#include <iostream>
 
 #ifdef _DEBUG
 #undef THIS_FILE
@@ -213,7 +214,8 @@ LRESULT LFPropBar::OnCommandClicked(WPARAM, LPARAM lp)
 //	int nCommandIndex = (int)lp;
 
 	// TODO: Add your command handler code here
-	
+	std::cout << "paing" << std::endl;
+
 	return 0;
 }
 

@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Value">
-      <UniqueIdentifier>{ae0368f6-a820-43ca-924c-a897a6f97301}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -27,20 +24,17 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Define.h">
+    <ClInclude Include="AsioNet.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Default.h">
-      <Filter>Value</Filter>
+    <ClInclude Include="Connection.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Value.h">
-      <Filter>Value</Filter>
+    <ClInclude Include="ConnectionManager.h">
+      <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ValueBase.hpp">
-      <Filter>Value</Filter>
-    </ClInclude>
-    <ClInclude Include="Checker.hpp">
-      <Filter>Value</Filter>
+    <ClInclude Include="define.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -50,19 +44,11 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="WatchCore.cpp">
+    <ClCompile Include="Connection.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Default.cpp">
-      <Filter>Value</Filter>
+    <ClCompile Include="ConnectionManager.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Value.cpp">
-      <Filter>Value</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Default.iml">
-      <Filter>Value</Filter>
-    </None>
   </ItemGroup>
 </Project>

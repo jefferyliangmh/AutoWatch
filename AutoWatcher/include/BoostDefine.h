@@ -1,0 +1,5 @@
+#pragma once
+
+#define BOOST_ALL_DYN_LINK 
+#define BOOST_LIB_DIAGNOSTIC
+#define BOOST_AUTO_LINK_TAGGED

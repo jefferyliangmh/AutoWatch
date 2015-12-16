@@ -1,18 +1,28 @@
 #pragma once
 #include "Define.h"
-#include <float.h>
-#include <limits.h>
+#include "Default.h"
+#include "Checker.hpp"
 
+/// <summary>
+/// Class ValueBase.
+/// </summary>
 template <class ValueType>
 class ValueBase
 {
 public:
-	ValueType& Value(void) 
+	/// <summary>
+	/// 获取Value值
+	/// </summary>
+	ValueType& Value(void)
 	{
 		return _value;
 	}
 
-	void Value(const ValueType& val) 
+	/// <summary>
+	/// Values the specified value.
+	/// </summary>
+	/// <param name="val">The value.</param>
+	void Value(const ValueType& val)
 	{ 
 		SetValue(val);
 	}
@@ -27,13 +37,27 @@ public:
 		return _value;
 	}
 
-	ValueType& operator=(const ValueType& val)
+	ValueBase& operator=(const ValueType& val)
 	{
 		SetValue(val);
-		return _value;
+		return *this;
 	}
 
-protected:
+	ValueBase& operator=(const ValueBase& val)
+	{
+		if (this == &val)
+			return *this;
+
+		SetValue(val());
+
+		return *this;
+	}
+
+	ValueBase(void)
+		:_value(Value<ValueType>::Default())
+	{
+	}
+
 	ValueBase(const ValueType& val)
 		:_value(val)
 	{
@@ -47,46 +71,15 @@ protected:
 private:
 	void SetValue(const ValueType& val)
 	{
-		Checker<ValueType> checker;
-		if (checker.Check(val))
+		if (Checker<ValueType>::Check(val))
 		{
 			_value = val;
 		}
 		else
 		{
-			Logger::Log("无法通过数值有效性验证，放弃赋值", Warning);
+			Log::Warning("无法通过数值有效性验证，放弃赋值");
 		}
 	}
 
 	ValueType _value;
-};
-
-template <class ValueType>
-class Checker
-{
-public:
-	bool Check(const ValueType& val)
-	{
-		return true;
-	}
-};
-
-template <>
-class Checker <double>
-{
-public:
-	bool Check(const double& val)
-	{
-		return (val > DBL_MIN && val < DBL_MAX);
-	}
-};
-
-template <>
-class Checker <int>
-{
-public:
-	bool Check(const int& val)
-	{
-		return (val > INT_MIN && val < INT_MAX);
-	}
 };
